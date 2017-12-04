@@ -4,16 +4,17 @@ public class Main {
 
     public static void main(String[] args) {
 
-       /* int[] temperatures = new int[5];
+        int[] temperatures = new int[5];
 
         for (int i = 0; i < 5; i++) {
             temperatures[i] = i;
         }
-        */
+
         // populateArray(temperatures);
         // printArrayElements(temperatures);
         // printMaxValue(temperatures);
 
+        countAVG(temperatures);
 
         UserOperation userOperation = new UserOperation();
 
@@ -62,4 +63,15 @@ public class Main {
         System.out.println(second_max);
     }
     */
+
+    private static void  countAVG(int[] array) {
+        double summ =0;
+        for (int i= 0; i< array.length; i++)
+        {
+            summ=summ+array[i];
+        }
+        double result = summ/array.length;
+        System.out.println("---------------");
+        System.out.println("AVG: " + result);
+    }
 }
