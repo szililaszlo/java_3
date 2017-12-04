@@ -70,7 +70,7 @@ public class Main {
         {
             summ=summ+array[i];
         }
-        double result = summ/array.length;
+        double result = summ/array.length+1;
         System.out.println("---------------");
         System.out.println("AVG: " + result);
     }
