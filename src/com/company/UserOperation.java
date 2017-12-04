@@ -17,6 +17,22 @@ public class UserOperation {
     }
 
     public User[] generateUserArray(int n) {
-        
+        User[] users = new User[n];
+        for (int i =0; i<n; i++) {
+           users[i] = createRandomUser();
+        }
+        return users;
     }
+
+    public void printUserArray(User[] users) {
+        for (int i  = 0; i<users.length; i++) {
+            System.out.println(users[i].getFirstname());
+            System.out.println(users[i].getLastname());
+            System.out.println(users[i].getPassword());
+            System.out.println(users[i].getAge());
+        }
+    }
+
+
+
 }

@@ -4,12 +4,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int[] temperatures = new int[5];
+       /* int[] temperatures = new int[5];
 
         for (int i = 0; i < 5; i++) {
             temperatures[i] = i;
         }
-
+        */
         // populateArray(temperatures);
         // printArrayElements(temperatures);
         // printMaxValue(temperatures);
@@ -17,12 +17,17 @@ public class Main {
 
         UserOperation userOperation = new UserOperation();
 
-        User testUser = userOperation.createRandomUser();
+        userOperation.printUserArray(userOperation.generateUserArray(10));
+
+
+      /*  User testUser = userOperation.createRandomUser();
 
         System.out.println(testUser.getFirstname());
         System.out.println(testUser.getLastname());
         System.out.println(testUser.getPassword());
         System.out.println(testUser.getAge());
+      */
+
 
     }
 
