@@ -4,6 +4,8 @@ package com.company;
  * Created by java1 on 2017.12.04..
  */
 public class User {
+
+    private int id;
     private String firstname;
     private String lastname;
     private String password;
@@ -13,11 +15,12 @@ public class User {
     }
 
 
-    public User(String firstname, String lastname, String password, int age) {
+    public User(int id, String firstname, String lastname, String password, int age) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.password = password;
         this.age = age;
+        this.id = id;
     }
 
     public User(User user) {
@@ -25,6 +28,10 @@ public class User {
         this.firstname = user.firstname;
         this.lastname = user.lastname;
         this.password = user.password;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getFirstname() {
@@ -41,6 +48,10 @@ public class User {
 
     public int getAge() {
         return age;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public void setFirstName(String firstname) {
